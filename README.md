@@ -38,7 +38,7 @@ Main areas of interest:
 - CSS
 
 ### Databases
-- SQL
+- SQLite
 - DuckDB
 
 ### Other
@@ -211,32 +211,29 @@ University project involving analysis of Oracle financial statements.
 
 ---
 
-## Investor's Club UKW
+## Investor’s Club UKW
 
-Member and presenter.
+Member
 
-Activities:
+* Participated in financial analysis discussions and investment case studies
+* Engaged in internal club activities related to markets and quantitative finance
 
-- Financial analysis discussions
-- Investment case studies
-- Quantitative finance presentations
-- Public presentations and communication
+Presenter – ERASMUS+ Blended Intensive Programme (BIP), UKW (2026)
 
----
-
-# Certifications
-
-> Placeholder
+* Delivered a presentation on quantitative trading concepts to an international audience
+* Communicated analytical and financial topics in English
+* Participated in Q&A and discussion following the presentation
 
 ---
+
 
 # Education
 
-**University:** Placeholder
+**University:** Kazimierz Wielki University in Bydgoszcz
 
 **Degree:** Economics
 
-**Expected Graduation:** Placeholder
+**Expected Graduation:** 2027
 
 Relevant coursework:
 
@@ -247,27 +244,3 @@ Relevant coursework:
 - Data Analysis
 
 ---
-
-# Future Projects
-
-- Power BI Financial Dashboard
-- Business Intelligence Case Study
-- Economic Data Dashboard
-- Portfolio Website
-- Financial Data Automation Tools
-
----
-
-# Contact
-
-**Email:** Placeholder
-
-**LinkedIn:** Placeholder
-
-**GitHub:** Placeholder
-
----
-
-# Portfolio Website
-
-> Placeholder for website link

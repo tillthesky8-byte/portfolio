@@ -10,31 +10,35 @@ Each project page contains a concise overview, methodology, key findings, techno
 
 ## Quantitative Backtesting Engine
 
-<!-- Technologies: C#, SQL, DuckDB
+### Technologies:
+> **C#** | **SQL** | **DuckDB** | **SQLite** | **ASP.NET Core** | **React** | **Lightweight Charts** (TradingView) | **Git** | **xUnit**
 
-A modular framework for evaluating trading strategies on historical market data. The system separates strategies into reusable families, reducing implementation complexity and improving reliability when testing new ideas.
+### Description: 
+Developed a modular quantitative research platform for designing, testing, and analyzing trading strategies on historical market data. The system combines a lightweight command-line interface for rapid experimentation with a web-based dashboard for deep analysis and visualization. Particular emphasis was placed on scalability, memory efficiency, and reducing implementation risk when developing new strategies.
 
-Highlights
-- Modular strategy architecture
-- Automated performance evaluation
-- Historical market data analysis
-- Database-driven workflow -->
+### Key Features:
+
+- ***Strategy Family Architecture*** -
+  Introduced a reusable strategy-family abstraction that allows new trading strategies to be implemented with minimal code while inheriting common execution and validation logic. This *significantly* reduces development time and the likelihood of implementation errors.
+
+- ***Efficient Large-Scale Backtesting*** -
+  Processes historical market data through asynchronous streaming rather than loading entire datasets into memory, enabling backtests on large datasets with low memory consumption.
+
+- ***Interactive Research Dashboard*** -
+  Built a web interface for exploring backtest results, performance metrics, and trade history using TradingView's Lightweight Charts for responsive visualization.
+
+- ***Database-Driven Workflow*** - 
+  Migrated data storage from SQLite to DuckDB to improve analytical query performance and support larger research workloads.
 
 → [View Project](projects/backtesting-engine/README.md)
 
 ---
 
 ## Oracle Financial Analysis 
-<!-- 
-Technologies: Power BI, Excel
 
-Interactive business intelligence dashboard built from Oracle financial statements. The project explores profitability, growth, liquidity, and capital structure through KPI-driven reporting and financial analysis.
+### Technologies:
+> **Power BI** | **Power Query** | **DAX** | **Excel**
 
-Highlights
-- Financial statement analysis
-- Executive KPI dashboard
-- Trend and ratio analysis
-- Interactive reporting -->
 
 → [View Project](projects/oracle-financial-analysis/README.md)
 
@@ -42,15 +46,9 @@ Highlights
 
 ## Modeling Inflation Drivers in the United States
 
-<!-- Technologies: Gretl, Econometrics, Statistical Analysis
+### Technologies:
+> **Gretl** | **Excel** | **Python** | **Matplotlib** | **Seaborn** | **Jupyter Notebook**
 
-Econometric study examining the relationship between inflation and key macroeconomic variables including oil prices, inflation expectations, consumer spending, and unemployment.
-
-Highlights
-- Multiple regression modeling
-- Statistical hypothesis testing
-- Model diagnostics and validation
-- R² ≈ 74% -->
 
 → [View Project](projects/inflation-model/README.md)
 
@@ -58,16 +56,9 @@ Highlights
 
 ## Psychological Burden Index & Innovation Analysis
 
-<!-- Technologies: Multivariate Analysis, Hellwig Method, Nonlinear Regression
+### Technologies:
+> **Excel** | **Python** | **Matplotlib** | **Jupyter Notebook**
 
-Research project focused on constructing a synthetic indicator of psychological burden and investigating its relationship with national innovation performance.
-
-Highlights
-- Synthetic indicator construction
-- International country comparison
-- Correlation analysis
-- Nonlinear modeling
-- R² ≈ 75% -->
 
 → [View Project](projects/psychological-burden-index/README.md)
 

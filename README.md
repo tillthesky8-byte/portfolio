@@ -1,246 +1,94 @@
 # Portfolio
 
-Portfolio of projects in data analysis, business intelligence, finance, and software development.
+A collection of projects in data analytics, business intelligence, econometrics, finance, and software development.
 
----
-
-## About
-
-Economics student with experience in data analysis, financial statement analysis, business intelligence, and software development.
-
-Main areas of interest:
-
-- Data Analytics
-- Business Intelligence
-- Financial Analysis
-- Quantitative Finance
-- Software Development
-
----
-
-## Skills
-
-### Data & Analytics
-- SQL
-- Power BI
-- Power Query
-- DAX
-- Excel
-- Gretl
-- Data Visualization
-
-### Programming
-- Python
-- C#
-- JavaScript
-- TypeScript
-- HTML
-- CSS
-
-### Databases
-- SQLite
-- DuckDB
-
-### Other
-- Git
-- GitHub
-- Financial Statement Analysis
-- Presentation & Communication
+Each project page contains a concise overview, methodology, key findings, technologies used, and supporting artifacts such as reports, presentations, dashboards, and source code.
 
 ---
 
 # Featured Projects
 
----
-
 ## Quantitative Backtesting Engine
 
-**Status:** Completed
+<!-- Technologies: C#, SQL, DuckDB
 
-**Technologies**
-- C#
-- DuckDB
-- SQL
+A modular framework for evaluating trading strategies on historical market data. The system separates strategies into reusable families, reducing implementation complexity and improving reliability when testing new ideas.
 
-### Overview
-
-CLI application for testing and evaluating trading strategies on historical market data.
-
-### Key Features
-
+Highlights
 - Modular strategy architecture
-- Strategy-family abstraction
-- Historical performance testing
-- Automated metrics calculation
-- DuckDB integration for efficient querying
+- Automated performance evaluation
+- Historical market data analysis
+- Database-driven workflow -->
 
-### Screenshots
-
-> Placeholder for screenshots
-
-### Architecture
-
-> Placeholder for architecture diagram
-
-### Results
-
-> Placeholder for performance examples
-
-### Repository
-
-> Placeholder for GitHub link
+→ [View Project](projects/backtesting-engine/README.md)
 
 ---
 
-## Oracle Financial Analysis Dashboard
+## Oracle Financial Analysis 
+<!-- 
+Technologies: Power BI, Excel
 
-**Status:** In Progress
+Interactive business intelligence dashboard built from Oracle financial statements. The project explores profitability, growth, liquidity, and capital structure through KPI-driven reporting and financial analysis.
 
-**Technologies**
-- Power BI
-- Excel
+Highlights
+- Financial statement analysis
+- Executive KPI dashboard
+- Trend and ratio analysis
+- Interactive reporting -->
 
-### Overview
-
-Interactive financial analysis of Oracle based on income statements and balance sheets.
-
-### Scope
-
-- Revenue analysis
-- Profitability analysis
-- Balance sheet analysis
-- Financial ratios
-- Trend analysis
-
-### Dashboard Pages
-
-#### Executive Overview
-
-> Placeholder
-
-#### Income Statement Analysis
-
-> Placeholder
-
-#### Balance Sheet Analysis
-
-> Placeholder
-
-#### Financial Ratios
-
-> Placeholder
-
-### Screenshots
-
-> Placeholder for dashboard screenshots
-
-### Report
-
-> Placeholder for Power BI report link
+→ [View Project](projects/oracle-financial-analysis/README.md)
 
 ---
 
-## Data Visualization Project
+## Modeling Inflation Drivers in the United States
 
-**Status:** Planned
+<!-- Technologies: Gretl, Econometrics, Statistical Analysis
 
-**Technologies**
-- React
-- TypeScript
+Econometric study examining the relationship between inflation and key macroeconomic variables including oil prices, inflation expectations, consumer spending, and unemployment.
 
-### Overview
+Highlights
+- Multiple regression modeling
+- Statistical hypothesis testing
+- Model diagnostics and validation
+- R² ≈ 74% -->
 
-Interactive dashboard presenting analytical and financial data through modern visualizations.
-
-### Planned Features
-
-- Interactive charts
-- Filtering
-- KPI cards
-- Responsive design
-
-### Screenshots
-
-> Placeholder
-
-### Repository
-
-> Placeholder
+→ [View Project](projects/inflation-model/README.md)
 
 ---
 
-# Presentations
+## Psychological Burden Index & Innovation Analysis
 
----
+<!-- Technologies: Multivariate Analysis, Hellwig Method, Nonlinear Regression
 
-## Quantitative Trading Presentation
+Research project focused on constructing a synthetic indicator of psychological burden and investigating its relationship with national innovation performance.
 
-Presented during Investor's Club events.
+Highlights
+- Synthetic indicator construction
+- International country comparison
+- Correlation analysis
+- Nonlinear modeling
+- R² ≈ 75% -->
 
-### Topics
-
-- Quantitative trading
-- Backtesting
-- Strategy evaluation
-- Risk and performance metrics
-
-### Materials
-
-> Placeholder for slides
-
----
-
-## Financial Analysis Presentation
-
-University project involving analysis of Oracle financial statements.
-
-### Topics
-
-- Income statement analysis
-- Balance sheet analysis
-- Financial ratios
-- Business interpretation
-
-### Materials
-
-> Placeholder for slides
-
----
-
-# Organizations
-
----
-
-## Investor’s Club UKW
-
-Member
-
-* Participated in financial analysis discussions and investment case studies
-* Engaged in internal club activities related to markets and quantitative finance
-
-Presenter – ERASMUS+ Blended Intensive Programme (BIP), UKW (2026)
-
-* Delivered a presentation on quantitative trading concepts to an international audience
-* Communicated analytical and financial topics in English
-* Participated in Q&A and discussion following the presentation
+→ [View Project](projects/psychological-burden-index/README.md)
 
 ---
 
 
-# Education
+# Portfolio Structure
 
-**University:** Kazimierz Wielki University in Bydgoszcz
+Each project contains:
 
-**Degree:** Economics
-
-**Expected Graduation:** 2027
-
-Relevant coursework:
-
-- Econometrics
-- Statistics
-- Financial Analysis
-- Corporate Finance
-- Data Analysis
+1. Project Overview
+2. Methodology
+3. Results
+4. Artifacts
 
 ---
+
+# Contact
+
+LinkedIn: [link]
+
+GitHub: [link]
+
+Portfolio Website: [link]

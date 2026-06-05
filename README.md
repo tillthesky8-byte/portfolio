@@ -14,7 +14,7 @@ Each project page contains a concise overview, methodology, key findings, techno
 > **C#** | **SQL** | **DuckDB** | **SQLite** | **ASP.NET Core** | **React** | **Lightweight Charts** (TradingView) | **Git** | **xUnit**
 
 ### Description: 
-To perform quantitative research in finance without reinventing the wheel, developed a modular quantitative research platform for designing, testing, and analyzing trading strategies on historical market data. The system combines a lightweight command-line interface for rapid experimentation with a web-based dashboard for deep analysis and visualization. Particular emphasis was placed on scalability, memory efficiency, and reducing implementation risk when developing new strategies.
+To perform quantitative research in finance without reinventing the wheel, developed a modular quantitative research platform for designing, testing, and analyzing trading strategies on historical market data. The system combines a lightweight command-line interface for rapid experimentation with a web-based dashboard for deep analysis and visualization. Particular emphasis was placed on scalability, memory efficiency, and reducing implementation risk and time when developing new strategies.
 
 ### Key Features:
 
@@ -39,6 +39,19 @@ To perform quantitative research in finance without reinventing the wheel, devel
 ### Technologies:
 > **Power BI** | **Power Query** | **DAX** | **Excel**
 
+### Description:
+Oracle is mid-way through one of the most consequential business model transitions in enterprise software — from perpetual licensing to SaaS. That shift shows up everywhere in the financials. 20 years of quarterly data, DuPont decomposition, and asset turnover analysis used to separate structural signal from noise: a $28B acquisition, aggressive buybacks that make ROE actively misleading, and a deliberate cash-to-infrastructure reallocation that is only now beginning to reverse.
+
+### Key Findings:
+
+- ***ROE Is an Impostor*** —
+  Standard ROE swings from −17% to +540% — driven entirely by buyback-distorted leverage. DuPont decomposition without the multiplier reveals a stable 6–8% underlying return. Two very different stories from the same number.
+
+- ***Liquidity Drawdown Is the Strategy*** —
+  Cash ratio fell from 5.0 to 0.3 between 2021 and 2025. The 20-year quarterly series shows this isn't deterioration — it's a regime change, with a clear inflection at the 2016 NetSuite acquisition.
+
+- ***Suppliers Are Financing the Transition*** —
+  Receivables cycle held flat at 50–58 days while payables stretched to 110 days, driving CCC to −55. Read alongside 20 years of declining revenue volatility, the interpretation is counterintuitive — and worth seeing in full.
 
 → [View Project](projects/oracle-financial-analysis/README.md)
 
@@ -91,22 +104,3 @@ Conducted an econometric analysis to identify key drivers of month-over-month in
 
 ---
 
-
-# Portfolio Structure
-
-Each project contains:
-
-1. Project Overview
-2. Methodology
-3. Results
-4. Artifacts
-
----
-
-# Contact
-
-LinkedIn: [link]
-
-GitHub: [link]
-
-Portfolio Website: [link]

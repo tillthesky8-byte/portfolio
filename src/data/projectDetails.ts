@@ -24,6 +24,7 @@ type ProjectDetail = {
     src: string
     alt: string
     caption: string
+    repoHref?: string
   }>
   resources?: Array<{
     label: string
@@ -79,11 +80,15 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
         src: scattersImage,
         alt: 'Scatter plot showing the psychological burden index against innovation capacity',
         caption: 'Raw scatter relationship between Hᵢ and GII.',
+        repoHref:
+          'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/psychological-burden-index/original-artifacts/scatters.png',
       },
       {
         src: fitImage,
         alt: 'Sigmoid fit for the psychological burden and innovation relationship',
         caption: 'Final sigmoid fit with the threshold-like response curve.',
+        repoHref:
+          'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/psychological-burden-index/original-artifacts/fit.png',
       },
     ],
   },
@@ -135,23 +140,25 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
         src: inflationModelSlide,
         alt: 'Presentation slide showing the inflation model results',
         caption: 'Model presentation slide from the original project artifacts.',
+        repoHref:
+          'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/inflation-model/original-artifacts/CPI_model_prezentacja/5.jpg',
       },
     ],
     resources: [
       {
         label: 'Presentation',
         description: 'Full presentation deck in the original project artifacts.',
-        href: '/inflation-model/projekt37-2.pdf',
+        href: 'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/inflation-model/original-artifacts/CPI_model_prezentacja',
       },
       {
         label: 'Dataset',
         description: 'Source data used for the econometric model.',
-        href: '/inflation-model/dane.csv',
+        href: 'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/inflation-model/original-artifacts/dane.csv',
       },
       {
         label: 'Research paper',
         description: 'Complete paper documenting the model and diagnostics.',
-        href: '/inflation-model/projekt37-2.pdf',
+        href: 'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/inflation-model/original-artifacts/projekt37-2.pdf',
       },
     ],
   },
@@ -190,26 +197,30 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
     ],
     artifacts: [
       {
-        src: '/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/5.jpg',
+        src: 'https://raw.githubusercontent.com/tillthesky8-byte/portfolio/main/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/5.jpg',
         alt: 'Oracle liquidity chart',
         caption: 'Cash ratio and liquidity drawdown (presentation slide).',
+        repoHref:
+          'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/5.jpg',
       },
       {
-        src: '/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/10.jpg',
+        src: 'https://raw.githubusercontent.com/tillthesky8-byte/portfolio/main/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/10.jpg',
         alt: 'DuPont decomposition',
         caption: 'DuPont and turnover visualizations.',
+        repoHref:
+          'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/10.jpg',
       },
     ],
     resources: [
       {
         label: 'Presentation',
         description: 'Presentation deck from the original project artifacts.',
-        href: '/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja',
+        href: 'https://github.com/tillthesky8-byte/portfolio/tree/main/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja',
       },
       {
         label: 'Power BI report',
         description: 'Reconstructed Power BI file (.pbix).',
-        href: '/projects/oracle-financial-analysis/original-artifacts/OracleFinAnalysis.pbix',
+        href: 'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/oracle-financial-analysis/original-artifacts/OracleFinAnalysis.pbix',
       },
     ],
   },
@@ -246,9 +257,11 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
     ],
     artifacts: [
       {
-        src: '/projects/backtesting-engine/original-artifacts/BIP_Presentation/1.jpg',
+        src: 'https://raw.githubusercontent.com/tillthesky8-byte/portfolio/main/projects/backtesting-engine/original-artifacts/BIP_Presentation/1.jpg',
         alt: 'Backtesting architecture diagram',
         caption: 'Architecture overview from the presentation.',
+        repoHref:
+          'https://github.com/tillthesky8-byte/portfolio/blob/main/projects/backtesting-engine/original-artifacts/BIP_Presentation/1.jpg',
       },
     ],
   },

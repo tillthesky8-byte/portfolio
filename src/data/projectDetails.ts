@@ -10,6 +10,7 @@ type ProjectDetail = {
   readme?: string
   overviewQuestion?: string
   summary?: string
+  summaryAlt?: string
   methodology?: Array<{
     title: string
     description: string
@@ -92,6 +93,8 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
       'Which macroeconomic factors contribute most to monthly inflation in the US, and how do their effects evolve over time?',
     summary:
       'This project investigates the factors most strongly associated with monthly CPI changes in the United States between 2015 and 2021. It uses an econometric model built on supply shocks, expectation effects, and demand pressure, with diagnostics used to validate the OLS specification.',
+    summaryAlt:
+      'A compact econometric analysis (2015–2021) showing expectations and lagged oil shocks explain most monthly CPI variation.',
     methodology: [
       {
         title: 'Target variable',
@@ -154,9 +157,100 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   },
   'oracle-financial-analysis': {
     readme: oracleReadme,
+    overviewQuestion: 'How is Oracle’s financial performance changing as it transitions to SaaS?',
+    summary:
+      'A financial forensics of Oracle’s transition from perpetual licensing to subscription SaaS. Using 2005–2025 statements and SEC filings, the analysis reconstructs key profitability and liquidity metrics, isolates one-off tax and disposal events, and uses DuPont-style decompositions to show the operational picture beneath buyback-driven leverage swings.',
+    summaryAlt:
+      'Reconstructs Oracle financials (2005–2025) to separate operational performance from buyback and tax distortions during the SaaS transition.',
+    methodology: [
+      {
+        title: 'Data sourcing & validation',
+        description:
+          'Historical financials were sourced from Macrotrends and cross-checked with SEC filings to verify one-off events and ensure consistency.',
+      },
+      {
+        title: 'Reconstruction in Power BI',
+        description:
+          'Metrics were recalculated from raw statements and reproduced in Power BI to produce interactive dashboards and verify DAX implementations.',
+      },
+      {
+        title: 'DuPont and efficiency analysis',
+        description:
+          'DuPont decomposition (with and without leverage) and turnover z-score normalization reveal how capital reallocation and buybacks bias headline ratios.',
+      },
+    ],
+    findings: [
+      'ROE swings are largely driven by buybacks and leverage, obscuring stable underlying returns.',
+      'Cash ratios fell markedly as Oracle invested heavily in cloud infrastructure; the long-run series shows this as a deliberate strategic shift.',
+      'Efficiency and turnover metrics show a mirror-image shift as capital floods PPE while current asset turnover changes direction.',
+    ],
+    stats: [
+      { label: 'Sample', value: '2005–2025 (quarterly & annual)' },
+      { label: 'Key insight', value: 'Operational returns stable; leverage distorts ROE' },
+    ],
+    artifacts: [
+      {
+        src: '/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/5.jpg',
+        alt: 'Oracle liquidity chart',
+        caption: 'Cash ratio and liquidity drawdown (presentation slide).',
+      },
+      {
+        src: '/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja/10.jpg',
+        alt: 'DuPont decomposition',
+        caption: 'DuPont and turnover visualizations.',
+      },
+    ],
+    resources: [
+      {
+        label: 'Presentation',
+        description: 'Presentation deck from the original project artifacts.',
+        href: '/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja',
+      },
+      {
+        label: 'Power BI report',
+        description: 'Reconstructed Power BI file (.pbix).',
+        href: '/projects/oracle-financial-analysis/original-artifacts/OracleFinAnalysis.pbix',
+      },
+    ],
   },
   'backtesting-engine': {
     readme: backtestingReadme,
+    overviewQuestion: 'How to run fast, memory-efficient backtests at scale?',
+    summary:
+      'A high-performance event-driven backtesting framework implemented in modern .NET. It processes historical data as a stream to keep memory usage low while supporting complex strategy families and integration with a Vite-based UI for result visualization.',
+    summaryAlt: 'A streaming, event-driven backtesting engine in .NET designed for low memory and fast iteration.',
+    methodology: [
+      {
+        title: 'Streaming data engine',
+        description:
+          'Historical candles and external factors are processed as a stream to minimize memory footprint and enable large-sample backtests.',
+      },
+      {
+        title: 'Strategy-family design',
+        description:
+          'Strategies are parameterized as families so new variants can be composed quickly without rewriting core execution logic.',
+      },
+      {
+        title: 'Studio & visualization',
+        description:
+          'A Studio UI and HTTP API surface present run results, charts, and trade-level detail for analysis.',
+      },
+    ],
+    findings: [
+      'Streaming architecture enables backtests on large datasets without large memory overhead.',
+      'Strategy-family approach reduces development time when testing related ideas across parameter ranges.',
+    ],
+    stats: [
+      { label: 'Platform', value: 'C# (.NET) + Vite frontend' },
+      { label: 'Focus', value: 'Streaming/backtesting, low-memory' },
+    ],
+    artifacts: [
+      {
+        src: '/projects/backtesting-engine/original-artifacts/BIP_Presentation/1.jpg',
+        alt: 'Backtesting architecture diagram',
+        caption: 'Architecture overview from the presentation.',
+      },
+    ],
   },
 }
 

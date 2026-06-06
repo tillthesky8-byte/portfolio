@@ -38,23 +38,18 @@ export function ProjectDetailPage({ project, onBack }: ProjectDetailPageProps) {
             <p className="role-line">{project.subtitle}</p>
             <p className="lede">{detail.overviewQuestion}</p>
             <p className="detail-summary">{detail.summary}</p>
+            {detail.summaryAlt ? <p className="detail-summary-alt">{detail.summaryAlt}</p> : null}
           </div>
 
           <img className="detail-image" src={image} alt={project.title} />
         </section>
-        {detail.readme ? (
-          <section className="detail-section detail-readme">
-            <div className="section-heading">
-              <p className="eyebrow">Project README</p>
-              <h2>Full project notes</h2>
-            </div>
-
-            <div className="detail-readme-body">
-              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-              <ReactMarkdown remarkPlugins={[remarkGfm as unknown as any]}>{detail.readme}</ReactMarkdown>
-            </div>
-          </section>
-        ) : (
+        {(
+          detail.summary ||
+          (detail.methodology && detail.methodology.length > 0) ||
+          (detail.findings && detail.findings.length > 0) ||
+          (detail.stats && detail.stats.length > 0) ||
+          (detail.artifacts && detail.artifacts.length > 0)
+        ) ? (
           <>
             <section className="detail-stat-grid" aria-label="Project highlights">
               {detail.stats?.map((stat) => (
@@ -133,7 +128,19 @@ export function ProjectDetailPage({ project, onBack }: ProjectDetailPageProps) {
               </section>
             ) : null}
           </>
-        )}
+        ) : detail.readme ? (
+          <section className="detail-section detail-readme">
+            <div className="section-heading">
+              <p className="eyebrow">Project README</p>
+              <h2>Full project notes</h2>
+            </div>
+
+            <div className="detail-readme-body">
+              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+              <ReactMarkdown remarkPlugins={[remarkGfm as unknown as any]}>{detail.readme}</ReactMarkdown>
+            </div>
+          </section>
+        ) : null}
       </main>
     )
   }

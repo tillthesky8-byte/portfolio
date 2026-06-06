@@ -5,7 +5,7 @@
     "subtitle": "Finance research platform",
     "description": "A modular quantitative research platform for designing, testing, and analyzing trading strategies on historical market data.",
     "tags": ["C#", "SQL", "DuckDB", "ASP.NET Core", "Lightweight Charts", "React", "xUnit"],
-    "accent": "#2563eb",
+    "accent": "#ffffff",
     "secondary": "#0f172a",
     "label": "Backtesting Engine",
     "image": null
@@ -19,7 +19,7 @@
     "accent": "#c74733",
     "secondary": "#efefef",
     "label": "Oracle Analysis",
-    "image": "../assets/oracle_thumbnail.png"
+    "image": null
   },
   {
     "slug": "psychological-burden-index",

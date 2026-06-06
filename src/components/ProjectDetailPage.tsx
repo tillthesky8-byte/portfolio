@@ -100,8 +100,22 @@ export function ProjectDetailPage({ project, onBack }: ProjectDetailPageProps) {
               <div className="artifact-grid">
                 {detail.artifacts?.map((artifact) => (
                   <figure key={artifact.caption} className="artifact-card">
-                    <img src={artifact.src} alt={artifact.alt} />
-                    <figcaption>{artifact.caption}</figcaption>
+                    {artifact.repoHref ? (
+                      <a href={artifact.repoHref} target="_blank" rel="noreferrer">
+                        <img src={artifact.src} alt={artifact.alt} />
+                      </a>
+                    ) : (
+                      <img src={artifact.src} alt={artifact.alt} />
+                    )}
+                    <figcaption>
+                      {artifact.repoHref ? (
+                        <a href={artifact.repoHref} target="_blank" rel="noreferrer">
+                          {artifact.caption}
+                        </a>
+                      ) : (
+                        artifact.caption
+                      )}
+                    </figcaption>
                   </figure>
                 ))}
               </div>

@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "backtesting-engine",
+    "title": "Quantitative Backtesting Engine",
+    "subtitle": "Finance research platform",
+    "description": "A modular quantitative research platform for designing, testing, and analyzing trading strategies on historical market data.",
+    "tags": ["C#", "SQL", "DuckDB", "ASP.NET Core", "Lightweight Charts", "React", "xUnit"],
+    "accent": "#2563eb",
+    "secondary": "#0f172a",
+    "label": "Backtesting Engine",
+    "image": null
+  },
+  {
+    "slug": "oracle-financial-analysis",
+    "title": "Oracle Financial Analysis",
+    "subtitle": "Business model transition study",
+    "description": "A 20-year financial analysis of Oracle's transition from perpetual licensing to SaaS, using DuPont decomposition, asset turnover analysis, and quarterly trend inspection.",
+    "tags": ["Power BI", "Power Query", "DAX", "Excel"],
+    "accent": "#c74733",
+    "secondary": "#efefef",
+    "label": "Oracle Analysis",
+    "image": "../assets/oracle_thumbnail.png"
+  },
+  {
+    "slug": "psychological-burden-index",
+    "title": "Psychological Burden Index & Innovation Analysis",
+    "subtitle": "Cross-country index study",
+    "description": "A synthetic psychological burden index built with Hellwig's linear ordering method, then tested against national innovation capacity using indirect behavioral and health indicators.",
+    "tags": ["Excel", "Python", "Matplotlib", "Jupyter Notebook"],
+    "accent": "#0f766e",
+    "secondary": "#111827",
+    "label": "Burden Index",
+    "image": null
+  },
+  {
+    "slug": "inflation-model",
+    "title": "Modeling Inflation Drivers in the United States",
+    "subtitle": "Econometric monthly CPI model",
+    "description": "An econometric analysis of month-over-month inflation in the US from 2015 to 2021, combining supply shocks, demand pressure, and expectations.",
+    "tags": ["Gretl", "Excel", "Python", "Seaborn", "Jupyter Notebook"],
+    "accent": "#f97316",
+    "secondary": "#1e1b4b",
+    "label": "Inflation Model",
+    "image": null
+  }
+]

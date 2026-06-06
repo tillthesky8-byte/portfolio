@@ -3,6 +3,8 @@ import { highlights, profile } from '../data/siteContent'
 import type { Project } from './ProjectCard'
 import { ProjectCard } from './ProjectCard'
 
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 type PortfolioPageProps = {
   projects: Project[]
   onOpenProject: (slug: string) => void
@@ -12,7 +14,7 @@ export function PortfolioPage({ projects, onOpenProject }: PortfolioPageProps) {
   return (
     <main className="page-shell">
       <header className="site-header">
-        <a className="brand" href="/">
+        <a className="brand" href={basePath || '/'}>
           {profile.name}
         </a>
         <nav className="site-nav" aria-label="Primary">

@@ -18,17 +18,12 @@ To perform quantitative research in finance without reinventing the wheel, devel
 
 ### Key Features:
 
-- ***Strategy Family Architecture*** -
-  Introduced a reusable strategy-family abstraction that allows new trading strategies to be implemented with minimal code while inheriting common execution and validation logic. This *significantly* reduces development time and the likelihood of implementation errors.
+- Strategy Family Architecture
 
-- ***Efficient Large-Scale Backtesting*** -
-  Processes historical market data through asynchronous streaming rather than loading entire datasets into memory, enabling backtests on large datasets with low memory consumption.
+- Efficient Large-Scale Backtesting
 
-- ***Interactive Research Dashboard*** -
-  Built a web interface for exploring backtest results, performance metrics, and trade history using TradingView's Lightweight Charts for responsive visualization.
-
-- ***Database-Driven Workflow*** - 
-  Migrated data storage from SQLite to DuckDB to improve analytical query performance and support larger research workloads.
+- Interactive Research Dashboard
+- Database-Driven Workflow
 
 → [View Project](projects/backtesting-engine/README.md)
 
@@ -44,14 +39,14 @@ Oracle is mid-way through one of the most consequential business model transitio
 
 ### Key Findings:
 
-- ***ROE Is an Impostor*** —
-  Standard ROE swings from −17% to +540% — driven entirely by buyback-distorted leverage. DuPont decomposition without the multiplier reveals a stable 6–8% underlying return. Two very different stories from the same number.
+- ROE Is not reliable
 
-- ***Liquidity Drawdown Is the Strategy*** —
-  Cash ratio fell from 5.0 to 0.3 between 2021 and 2025. The 20-year quarterly series shows this isn't deterioration — it's a regime change, with a clear inflection at the 2016 NetSuite acquisition.
+- Liquidity Drawdown Is deliberate
 
-- ***Suppliers Are Financing the Transition*** —
-  Receivables cycle held flat at 50–58 days while payables stretched to 110 days, driving CCC to −55. Read alongside 20 years of declining revenue volatility, the interpretation is counterintuitive — and worth seeing in full.
+- The transition cost is visible, and fading.
+
+- Suppliers Are Financing the Transition
+
 
 → [View Project](projects/oracle-financial-analysis/README.md)
 
@@ -67,15 +62,8 @@ To answer the question that bothered me a lot and for a long time -> "Does stres
 
 ### Key Findings:
 
-- ***Bias-Resistant Variable Design*** —
-  Rejected self-reported anxiety metrics in favor of indirect indicators (cardiovascular disease rates, sleep duration, UAI), on the grounds that stress itself distorts self-assessment. A methodological choice, not a data limitation.
-
-- ***Collinearity-Corrected Weighting*** —
-  Heart disease and stroke were strongly correlated (r = 0.66), risking double-counting of the cardiovascular stress channel. Applied inverse-correlation weights, giving sleep duration the highest influence (w = 0.42) and keeping the index analytically clean.
-
-- ***Threshold, Not Gradient*** —
-  The Hᵢ–GII scatter doesn't support a linear model. Innovation drops sharply past Hᵢ ≈ 0.08 and flattens at both extremes — a sigmoid captures this with R² = 75.5% and an inflection point at Hᵢ = 0.080 ± 0.003.
-
+- The relationship with innovation is non-linear, with a clear threshold effect
+- The interpretation is asymmetrical.
 
 → [View Project](projects/psychological-burden-index/README.md)
 
@@ -91,14 +79,10 @@ Conducted an econometric analysis to identify key drivers of month-over-month in
 
 ### Key Findings:
 
-- ***Lagged Oil Prices Dominate*** —
-  Pass-through from crude oil to CPI is stronger with a delay: t−1 contributes ~0.8 p.p. vs ~0.51 p.p. contemporaneously, suggesting supply-side shocks take 1–2 months to fully propagate through production and transport costs.
-
-- ***Expectations Are the Strongest Driver*** —
-  Michigan Consumer Survey expectations carried the highest correlation with CPI (r = 0.597) and the strongest t-statistic (t = 8.04), reinforcing that credibility of monetary institutions is a first-order determinant of realized inflation.
-
-- ***All Assumptions Satisfied*** —
-  Residuals passed normality (Bera-Jarque p = 0.40), autocorrelation (Ljung-Box p = 0.275), and homoskedasticity (White test p = 0.52) checks — unusually clean diagnostics for monthly macro data.
+- Oil price transmission is delayed, not immediate.
+- Inflation expectations are the single strongest predictor.
+- The Phillips curve relationship holds.
+- The 2020 oil shock is a visible outlier, not a model failure.
 
 → [View Project](projects/inflation-model/README.md)
 

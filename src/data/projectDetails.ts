@@ -1,20 +1,25 @@
 import scattersImage from '../assets/psychological-burden-index-scatters.png'
 import fitImage from '../assets/psychological-burden-index-fit.png'
 import inflationModelSlide from '../assets/inflation-model-cpi-slide.jpg'
+import backtestingReadme from './readmes/backtesting-engine.md?raw'
+import oracleReadme from './readmes/oracle-financial-analysis.md?raw'
+import psychologicalReadme from './readmes/psychological-burden-index.md?raw'
+import inflationReadme from './readmes/inflation-model.md?raw'
 
 type ProjectDetail = {
-  overviewQuestion: string
-  summary: string
-  methodology: Array<{
+  readme?: string
+  overviewQuestion?: string
+  summary?: string
+  methodology?: Array<{
     title: string
     description: string
   }>
-  findings: string[]
-  stats: Array<{
+  findings?: string[]
+  stats?: Array<{
     label: string
     value: string
   }>
-  artifacts: Array<{
+  artifacts?: Array<{
     src: string
     alt: string
     caption: string
@@ -28,6 +33,7 @@ type ProjectDetail = {
 
 export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   'psychological-burden-index': {
+    readme: psychologicalReadme,
     overviewQuestion:
       'How do you measure the psychological burden of a country, and does it correlate with innovation capacity?',
     summary:
@@ -81,6 +87,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
     ],
   },
   'inflation-model': {
+    readme: inflationReadme,
     overviewQuestion:
       'Which macroeconomic factors contribute most to monthly inflation in the US, and how do their effects evolve over time?',
     summary:
@@ -144,6 +151,12 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
         href: '/inflation-model/projekt37-2.pdf',
       },
     ],
+  },
+  'oracle-financial-analysis': {
+    readme: oracleReadme,
+  },
+  'backtesting-engine': {
+    readme: backtestingReadme,
   },
 }
 

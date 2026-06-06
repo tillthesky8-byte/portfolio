@@ -47,21 +47,15 @@ The contemporaneous oil price change contributes ~0.51 p.p. to CPI, while the t�
 **Inflation expectations are the single strongest predictor.**
 The Michigan Consumer Survey variable carried both the highest bivariate correlation with CPI (r = 0.597) and the strongest t-statistic in the model (t = 8.04, p = 1.11e-11) — outperforming all three oil price lags. This quantifies the self-fulfilling component of inflation: when firms expect prices to rise, they raise prices.
 
-**The Phillips curve relationship holds, but weakly.**
-The unemployment rate enters with a negative coefficient (−0.000298), consistent with theory, and is statistically significant (p = 0.0009). However, the effect size is small — a reminder that the level of unemployment is a coarser signal than its change when explaining short-run CPI movements.
+**The Phillips curve relationship holds.**
+The unemployment rate enters with a negative coefficient (−0.000298), consistent with theory, and is statistically significant (p = 0.0009). The coefficient is small because I didn't apply a normalization of the variable at the time, but the sign and significance confirm that labor market slack still exerts downward pressure on prices, even in a high-inflation environment.
 
 **The 2020 oil shock is a visible outlier, not a model failure.**
 Scatter plots reveal extreme observations on both tails of the oil price distribution, corresponding to the ~60% collapse and subsequent ~90% rebound in crude prices during 2020. These pull the fitted line but do not invalidate it — the underlying relationship is cleaner within normal price variation ranges.
 
-## Skill Demonstrated
-- Econometrics
-- Statistical modeling
-- Hypothesis testing
-- Data visualization
-- Data analysis
-- Interpretation of results
+
 
 ## Artifacts
-- [Full presentation (in Polish)](original-artifacts/CPI_model_prezentacja/)
-- [Dataset](original-artifacts/dane.csv)
-- [Complete research paper (in Polish)](original-artifacts/projekt37-2.pdf)           
+- [Full presentation (in Polish)](https://github.com/tillthesky8-byte/portfolio/tree/main/projects/inflation-model/original-artifacts/CPI_model_prezentacja)
+- [Dataset](https://github.com/tillthesky8-byte/portfolio/blob/main/projects/inflation-model/original-artifacts/dane.csv)
+- [Complete research paper (in Polish)](https://github.com/tillthesky8-byte/portfolio/blob/main/projects/inflation-model/original-artifacts/projekt37-2.pdf)           

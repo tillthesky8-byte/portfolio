@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <script>
+      (function () {
+        var base = '/portfolio/'
+        var path = window.location.pathname
+
+        if (path.startsWith(base)) {
+          var next = path.slice(base.length)
+          if (!next.startsWith('/')) {
+            next = '/' + next
+          }
+          window.location.replace(base + '#!' + next + window.location.search + window.location.hash)
+        } else {
+          window.location.replace(base)
+        }
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -53,14 +53,6 @@ Parameters were estimated via non-linear least squares.
 
 ## Key Findings
 
-**The ranking separates two distinct worlds.**
-Ireland, Australia, Denmark, Singapore, and New Zealand cluster at Hᵢ = 0.09–0.11. Ukraine, Romania, Hungary, and Poland occupy the opposite end at Hᵢ = 0.39–0.70. The gap between the top and bottom cohorts is not marginal — it is structural.
-
-
-**Weighting changes the result — and the reason matters.**
-An unweighted index would have assigned disproportionate influence to the correlated cardiovascular variables. The correction redistributes weight toward sleep duration, a variable with low inter-correlation (r = −0.13 with stroke, r = 0.01 with heart disease) and strong face validity as a stress proxy.
-
----
 
 ### **The relationship with innovation is non-linear.**
 A linear model would misrepresent the data. Innovation capacity drops sharply as Hᵢ crosses approximately 0.08, then flattens at both extremes — high-burden and low-burden countries show less sensitivity to marginal changes than mid-range ones. The sigmoid captures this with R² = 75.5% and an inflection point estimated at Hᵢ = 0.080 ± 0.003.
@@ -77,3 +69,14 @@ Good mental health does not generate innovation — it enables it. Countries bel
 <div align="center">
   <img src="original-artifacts/fit.png" width="600">
 </div>
+
+---
+
+At the end wanted to add sigmoid shape is evidence against confounding argument. If the relationship were primarily driven by wealth (better economy → better healthcare → lower Hᵢ, and better economy → more innovation), you'd expect a smoother, more linear or even exponential curve — richer countries uniformly more innovative. Instead you get a threshold: below Hᵢ ≈ 0.08 the curve flattens, meaning additional reductions in burden don't produce proportionally more innovation. That's inconsistent with a pure wealth-driven story.
+
+The shape itself encodes the causal mechanism. A sigmoid implies a bottleneck being removed, not a resource being added. That's what "enabling rather than causing" looks like mathematically. If mental health were a direct input to innovation output the way capital or R&D spending is, you'd see a different functional form.
+
+## Artifacts
+
+- [Full Paper](https://github.com/tillthesky8-byte/portfolio/blob/main/projects/psychological-burden-index/original-artifacts/analiza%20danych0.pdf)
+- [Excel Workbook](https://github.com/tillthesky8-byte/portfolio/blob/main/projects/psychological-burden-index/original-artifacts/analiza%20danych.xlsx)

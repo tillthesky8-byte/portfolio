@@ -25,48 +25,26 @@ Oracle Corporation (NYSE: ORCL) is a $57B revenue enterprise software giant in t
 
 ### **ROE is not reliable.**
 Standard ROE swings from −17% to +540% across the sample — driven entirely by buyback-distorted leverage, not operational performance. Removing the multiplier reveals a stable 6–8% underlying return, with a tax-benefit-inflated 10% in 2021.
-<div align="center">
-    <img src="../oracle-financial-analysis/original-artifacts/Oracle_prezentacja/8.jpg" width="540">
-    <img src="../oracle-financial-analysis/original-artifacts/Oracle_prezentacja/9.jpg" width="540">
-</div>
 
 ---
 
 ### **Liquidity drawdown is deliberate.**
 Cash ratio collapsed from 5.0 to 0.3 between 2021 and 2025. The 20-year quarterly series contextualizes this: Oracle accumulated cash steadily from 2005, peaked around the 2016 NetSuite acquisition, and has been deploying it into cloud infrastructure ever since. Deterioration and transformation look identical on a 5-year snapshot — the longer series is what distinguishes them.
 
-<div align="center">
-    <img src="../oracle-financial-analysis/original-artifacts/Oracle_prezentacja/5.jpg" width="800">
-</div>
-
 ---
 
 ### **The transition cost is visible, and fading.**
 Pre-2021 operating ROS held at 0.20–0.30 through multiple one-time distortions. Post-2021 compression reflects real infrastructure spending — data centers, PP&E up 277% — but the trend is already reversing as short-term costs begin to fade.
-
-<div align="center">
-    <img src="../oracle-financial-analysis/original-artifacts/Oracle_prezentacja/15.jpg" width="540">
-</div>
 
 ---
 
 ### **Asset reallocation has a fingerprint.**
 PPE turnover (CV: 51%) dropped ~2.5 standard deviations as capital flooded into infrastructure. Current asset turnover (CV: 41%) moved in the opposite direction simultaneously. The mirror-image movement of these two series is the clearest single picture of what Oracle is doing with its balance sheet.
 
-<div align="center">
-    <img src="../oracle-financial-analysis/original-artifacts/Oracle_prezentacja/10.jpg" width="800">
-
-</div>
-
 ---
 
 ### **Suppliers are financing the transition.**
 Payables cycle grew from ~35 to ~110 days while receivables held flat at 50–58 days, driving CCC to −55 by 2025. Read alongside 20 years of declining revenue volatility, this suggests suppliers are extending credit precisely because Oracle's recurring SaaS revenue stream is becoming more predictable — trust built by the transformation itself.
-
-<div align="center">
-    <img src="../oracle-financial-analysis/original-artifacts/Oracle_prezentacja/12.jpg" width="540">
-    <img src="../oracle-financial-analysis/original-artifacts/Oracle_prezentacja/13.jpg" width="540">
-</div>
 
 ## Artifacts
 - [Presentation](https://github.com/tillthesky8-byte/portfolio/tree/main/projects/oracle-financial-analysis/original-artifacts/Oracle_prezentacja)

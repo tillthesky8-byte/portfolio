@@ -1,0 +1,36 @@
+.hero-subtitle {
+  font-family: var(--subtitle);
+  color: transparent;
+  background: var(--subtitle-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2vh;
+  line-height: 150%;
+  font-weight: 500;
+}
+.hero-title {
+  color: transparent;
+  background: var(--title-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: -5px;
+  font-weight: 900;
+  font-size: 17.5vh;
+  line-height: 1;
+}
+
+.hero-eyebrow {
+  font-size: 1.7vh;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 10vh;
+  }
+  .hero-subtitle {
+    font-size: 1.5vh;
+  }
+  .hero-eyebrow {
+    font-size: 1.2vh;
+  }
+}
